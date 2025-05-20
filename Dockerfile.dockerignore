@@ -1,0 +1,7 @@
+Dockerfile
+docker-compose.yaml
+Dockerfile.dockerignore
+
+.gitignore
+.git
+config.py
