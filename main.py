@@ -68,7 +68,7 @@ async def login(token: str = Cookie(None), login=Form(), password=Form()):
         user.id, time.time() + 3600, "auth"
     )
     response = RedirectResponse(url="/", status_code=status.HTTP_303_SEE_OTHER)
-    response.set_cookie(key="token", value=token, secure=True, httponly=True)
+    response.set_cookie(key="token", value=token, httponly=True)
     return response
 
 
